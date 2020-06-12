@@ -1,15 +1,26 @@
 <script>
+  import cartItems from '../Cart/store'
   import Button from "../UI/Button.svelte";
 
   export let id;
   export let title;
   export let price;
   export let description;
+  let pk = cartItems.length - 1 
 
   function addToCart() {
-    // Now what?
-    console.log(id);
+    // cartItems.set([])
+    pk += 1
+    cartItems.update(items => {
+      return [...items, {
+        id: 'p'+ pk,
+        title,
+        price, 
+        description
+      }]
+    })
   }
+      $: console.log(cartItems);
 </script>
 
 <style>
