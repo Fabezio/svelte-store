@@ -1,4 +1,6 @@
 <script>
+  import cartItems from './cart-store' 
+  import { products } from '../Products/products-store'
   import Button from "../UI/Button.svelte";
 
   export let title;
@@ -12,16 +14,18 @@
   }
 
   function removeFromCart() {
-    // ...
-    console.log("Removing...");
+    cartItems.update( items => {
+      return items.filter(i => i.id !== id)
+    })
   }
 </script>
 
 <style>
+  
   li {
     margin: 1rem 0;
-    border-radius: 5px;
-    background: white;
+    border-radius: 1.75rem;
+    background: linear-gradient(0.375turn,white, #eef);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     padding: 1rem;
   }

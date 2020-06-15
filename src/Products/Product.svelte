@@ -16,12 +16,13 @@
       }]
     })
   }
+  
 </script>
 
 <style>
   .product {
-    background: white;
-    border-radius: 5px;
+    background: linear-gradient(0.25turn, white, #eef);
+    border-radius: 1.75rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     padding: 1rem;
     display: flex;
