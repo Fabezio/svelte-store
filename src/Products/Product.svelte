@@ -1,9 +1,6 @@
 <script>
-<<<<<<< HEAD
   import cartItems from '../Cart/cart-store'
-=======
-  import cartItems from '../Cart/store'
->>>>>>> master
+
   import Button from "../UI/Button.svelte";
 
   export let id;
