@@ -11,7 +11,7 @@
   // let items
 
   // const unsubscribe = cartItems.subscribe(its => {
-  //   items = its
+    //   items = its
   // })
 
   onDestroy(() => {

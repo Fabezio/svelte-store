@@ -1,16 +1,20 @@
 <script>
+<<<<<<< HEAD
   import cartItems from '../Cart/cart-store'
+=======
+  import cartItems from '../Cart/store'
+>>>>>>> master
   import Button from "../UI/Button.svelte";
 
   export let id;
   export let title;
   export let price;
   export let description;
+  let pk = cartItems.length - 1 
 
   function addToCart() {
     cartItems.addItem({id, title, price})
   }
-  
 </script>
 
 <style>
